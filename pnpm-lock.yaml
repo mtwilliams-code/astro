@@ -3834,6 +3834,12 @@ importers:
         specifier: ^10.24.3
         version: 10.24.3
 
+  packages/astro/test/fixtures/ssr-error:
+    dependencies:
+      astro:
+        specifier: workspace:*
+        version: link:../../..
+
   packages/astro/test/fixtures/ssr-error-pages:
     dependencies:
       astro:
@@ -8787,7 +8793,6 @@ packages:
 
   libsql@0.4.5:
     resolution: {integrity: sha512-sorTJV6PNt94Wap27Sai5gtVLIea4Otb2LUiAUyr3p6BPOScGMKGt5F1b5X/XgkNtcsDKeX5qfeBDj+PdShclQ==}
-    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lilconfig@2.1.0:
@@ -10697,9 +10702,6 @@ packages:
     resolution: {integrity: sha512-M/wqwtOEjgb956/+m5ZrYT/Iq6Hax0OakWbokj8+9PXOnB7b/4AxESHieEtnNEy7ZpjsjYW1/5nK8fATQMmRxw==}
     peerDependencies:
       vue: '>=3.2.13'
-    peerDependenciesMeta:
-      vue:
-        optional: true
 
   vite@5.4.10:
     resolution: {integrity: sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==}
@@ -16948,7 +16950,6 @@ snapshots:
   vite-svg-loader@5.1.0(vue@3.5.12(typescript@5.6.3)):
     dependencies:
       svgo: 3.3.2
-    optionalDependencies:
       vue: 3.5.12(typescript@5.6.3)
 
   vite@5.4.10(@types/node@18.19.50)(sass@1.80.6):
