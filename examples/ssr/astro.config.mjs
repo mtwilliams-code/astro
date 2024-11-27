@@ -9,4 +9,12 @@ export default defineConfig({
 		mode: 'standalone',
 	}),
 	integrations: [svelte()],
+	i18n: {
+		locales: ['en','es'],
+		defaultLocale: 'en',
+		fallback: {es:'en'},
+		routing: {
+			'fallbackType': 'rewrite'
+		}
+	}
 });
